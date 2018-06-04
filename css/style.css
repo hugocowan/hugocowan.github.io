@@ -1,5 +1,108 @@
 body {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   color: #333;
-  font-family: "Arial Neue", "Helvetica", sans-serif; }
+  font-family: "Arial Neue", "Helvetica", sans-serif;
+  position: relative;
+  margin: 0; }
+
+main {
+  margin: 5%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+nav {
+  background: darkgrey;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 60px; }
+  nav div {
+    display: flex;
+    align-items: flex-start; }
+    nav div .title {
+      text-align: center;
+      margin: 0 10%; }
+
+.is-12 {
+  width: 100%; }
+
+.is-6 {
+  width: 40%; }
+  @media (max-width: 1000px) {
+    .is-6 {
+      width: 100%; } }
+
+.is-3 {
+  width: 33%; }
+  @media (max-width: 1000px) {
+    .is-3 {
+      width: 50%; } }
+  @media (max-width: 700px) {
+    .is-3 {
+      width: 100%; } }
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (max-width: 1000px) {
+    .about {
+      justify-content: center;
+      align-items: center; } }
+  .about .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0; }
+    .about .profile-image img {
+      width: 60%;
+      border-radius: 5px; }
+      @media (max-width: 1000px) {
+        .about .profile-image img {
+          width: 50%; } }
+
+.greybox, .projects {
+  background: lightgrey;
+  display: flex;
+  padding: 3% 1%;
+  flex-wrap: wrap;
+  margin: auto 5%;
+  border-radius: 5px;
+  justify-content: space-around; }
+  .greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
+    text-align: center; }
+
+.projects {
+  background: none;
+  justify-content: center; }
+  .projects h3 {
+    display: inline-flex; }
+  .projects .image-block {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0; }
+    .projects .image-block h3 {
+      position: absolute;
+      top: 0;
+      color: white; }
+    .projects .image-block div {
+      position: absolute;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      width: 90%;
+      bottom: 0; }
+
+.project-image {
+  width: 90%;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */
