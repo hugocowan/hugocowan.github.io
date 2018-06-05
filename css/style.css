@@ -88,10 +88,14 @@ nav {
     text-align: center; }
 
 .projects {
-  background: none;
-  justify-content: center; }
+  margin: 0 5% 3% 5%; }
   .projects h3 {
     display: inline-flex; }
+  .projects .is-6 {
+    margin: 0 0 3% 0; }
+  .projects .project-image {
+    width: 90%;
+    border-radius: 5px; }
   .projects .image-block {
     display: flex;
     position: relative;
@@ -107,10 +111,12 @@ nav {
       color: white;
       background: rgba(0, 0, 0, 0.7);
       width: 90%;
-      bottom: 0; }
+      bottom: 0;
+      border-radius: 0 0 5px 5px; }
 
-.project-image {
-  width: 90%;
-  border-radius: 5px; }
+.contact {
+  padding: 1%; }
+  .contact .is-12 {
+    margin: 0 0 3% 0; }
 
 /*# sourceMappingURL=style.css.map */
