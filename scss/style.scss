@@ -38,6 +38,15 @@ nav{
         font-size: 30px;
       }
     }
+    @media(max-width: 630px){
+      .title{
+        font-size: 18px;
+        text-align: center;
+      }
+      a{
+        display: none;
+      }
+    }
   }
 }
 
@@ -112,12 +121,14 @@ nav{
 .skills{
   display: flex;
   flex-wrap: wrap;
+  h3,p{
+    text-align: center;
+  }
   // background: pink;
 }
 
 .experience{
-  display: flex;
-  flex-wrap: wrap;
+  @extend .skills;
   // background: blue;
 }
 

@@ -40,6 +40,15 @@ nav div a {
 nav div a .far, nav div a .fab {
   font-size: 30px;
 }
+@media (max-width: 630px) {
+  nav div .title {
+    font-size: 18px;
+    text-align: center;
+  }
+  nav div a {
+    display: none;
+  }
+}
 
 .is-12 {
   width: 100%;
@@ -124,14 +133,12 @@ nav div a .far, nav div a .fab {
   }
 }
 
-.skills {
+.skills, .experience {
   display: flex;
   flex-wrap: wrap;
 }
-
-.experience {
-  display: flex;
-  flex-wrap: wrap;
+.skills h3, .experience h3, .skills p, .experience p {
+  text-align: center;
 }
 
 .projects {
