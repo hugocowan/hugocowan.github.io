@@ -119,7 +119,6 @@ nav div .title {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  background: pink;
 }
 
 .experience {
