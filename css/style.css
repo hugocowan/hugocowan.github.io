@@ -67,8 +67,22 @@ nav div a .far, nav div a .fab {
   }
 }
 
-.is-3 {
+.is-4 {
   width: 33%;
+}
+@media (max-width: 1000px) {
+  .is-4 {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .is-4 {
+    width: 100%;
+  }
+}
+
+.is-3 {
+  width: 25%;
 }
 @media (max-width: 1000px) {
   .is-3 {
