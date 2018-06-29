@@ -71,7 +71,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: red;
+  // background: red;
   @media(max-width: 1000px){
     justify-content: center;
     align-items: center;
@@ -105,13 +105,13 @@ nav{
 .skills{
   display: flex;
   flex-wrap: wrap;
-  background: green;
+  // background: green;
 }
 
 .experience{
   display: flex;
   flex-wrap: wrap;
-  background: blue;
+  // background: blue;
 }
 
 .projects{

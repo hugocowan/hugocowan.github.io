@@ -5,46 +5,61 @@ body {
   color: #333;
   font-family: "Arial Neue", "Helvetica", sans-serif;
   position: relative;
-  margin: 0; }
+  margin: 0;
+}
 
 main {
   margin: 10% 0 5% 0;
   position: absolute;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+}
 
 nav {
   background: darkgrey;
   width: 100%;
   height: 60px;
-  margin: 0 0 100vh 0; }
-  nav div {
-    display: flex; }
-    nav div .title {
-      text-align: center;
-      margin: 0 10%; }
+  margin: 0 0 100vh 0;
+}
+nav div {
+  display: flex;
+}
+nav div .title {
+  text-align: center;
+  margin: 0 10%;
+}
 
 .is-12 {
-  width: 100%; }
+  width: 100%;
+}
 
 .is-6 {
-  width: 40%; }
-  @media (max-width: 1000px) {
-    .is-6 {
-      width: 100%; } }
+  width: 40%;
+}
+@media (max-width: 1000px) {
+  .is-6 {
+    width: 100%;
+  }
+}
 
 .is-3 {
-  width: 33%; }
-  @media (max-width: 1000px) {
-    .is-3 {
-      width: 50%; } }
-  @media (max-width: 700px) {
-    .is-3 {
-      width: 100%; } }
+  width: 33%;
+}
+@media (max-width: 1000px) {
+  .is-3 {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .is-3 {
+    width: 100%;
+  }
+}
 
 .greybox, .projects {
   background: lightgrey;
@@ -53,80 +68,103 @@ nav {
   flex-wrap: wrap;
   margin: auto 5%;
   border-radius: 5px;
-  justify-content: space-around; }
-  .greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
-    text-align: center; }
+  justify-content: space-around;
+}
+.greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
+  text-align: center;
+}
 
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: red; }
-  @media (max-width: 1000px) {
-    .about {
-      justify-content: center;
-      align-items: center; } }
-  @media (max-width: 768px) {
-    .about {
-      margin: 5% 0 0 0; } }
-  @media (max-width: 375px) {
-    .about {
-      margin: 15% 0 0 0; } }
-  .about .profile-image {
-    display: flex;
+}
+@media (max-width: 1000px) {
+  .about {
     justify-content: center;
     align-items: center;
-    padding: 2% 0; }
-    .about .profile-image img {
-      width: 60%;
-      border-radius: 5px; }
-      @media (max-width: 1000px) {
-        .about .profile-image img {
-          width: 30%; } }
-      @media (max-width: 500px) {
-        .about .profile-image img {
-          width: 45%; } }
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    margin: 5% 0 0 0;
+  }
+}
+@media (max-width: 375px) {
+  .about {
+    margin: 15% 0 0 0;
+  }
+}
+.about .profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+.about .profile-image img {
+  width: 60%;
+  border-radius: 5px;
+}
+@media (max-width: 1000px) {
+  .about .profile-image img {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .about .profile-image img {
+    width: 45%;
+  }
+}
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  background: green; }
+}
 
 .experience {
   display: flex;
   flex-wrap: wrap;
-  background: blue; }
+}
 
 .projects {
-  margin: 0 5% 3% 5%; }
-  .projects h3 {
-    display: inline-flex; }
-  .projects .is-6 {
-    margin: 0 0 3% 0; }
-  .projects .project-image {
-    width: 90%;
-    border-radius: 5px; }
-  .projects .image-block {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0; }
-    .projects .image-block h3 {
-      position: absolute;
-      top: 0;
-      color: white; }
-    .projects .image-block div {
-      position: absolute;
-      color: white;
-      background: rgba(0, 0, 0, 0.7);
-      width: 90%;
-      bottom: 0;
-      border-radius: 0 0 5px 5px; }
+  margin: 0 5% 3% 5%;
+}
+.projects h3 {
+  display: inline-flex;
+}
+.projects .is-6 {
+  margin: 0 0 3% 0;
+}
+.projects .project-image {
+  width: 90%;
+  border-radius: 5px;
+}
+.projects .image-block {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0;
+}
+.projects .image-block h3 {
+  position: absolute;
+  top: 0;
+  color: white;
+}
+.projects .image-block div {
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
 
 .contact {
-  padding: 1%; }
-  .contact .is-12 {
-    margin: 0 5% 3% 5%; }
+  padding: 1%;
+}
+.contact .is-12 {
+  margin: 0 5% 3% 5%;
+}
 
 /*# sourceMappingURL=style.css.map */
