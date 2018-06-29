@@ -28,10 +28,17 @@ nav {
 }
 nav div {
   display: flex;
+  margin: 0 10%;
 }
 nav div .title {
-  text-align: center;
-  margin: 1% 10%;
+  text-align: left;
+}
+nav div a {
+  align-self: center;
+  padding: 0 10px;
+}
+nav div a .far, nav div a .fab {
+  font-size: 30px;
 }
 
 .is-12 {

@@ -27,9 +27,16 @@ nav{
   margin: 0 0 100vh 0;
   div{
     display: flex;
+    margin: 0 10%;
     .title{
-      text-align: center;
-      margin: 1% 10%;
+      text-align: left;
+    }
+    a{
+      align-self: center;
+      padding: 0 10px;
+      .far,.fab{
+        font-size: 30px;
+      }
     }
   }
 }
