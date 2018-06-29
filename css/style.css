@@ -8,7 +8,7 @@ body {
   margin: 0; }
 
 main {
-  margin: 10% 5% 5% 5%;
+  margin: 10% 0 5% 0;
   position: absolute;
   display: flex;
   flex-wrap: wrap; }
@@ -19,10 +19,9 @@ a {
 
 nav {
   background: darkgrey;
-  position: absolute;
-  left: 0;
   width: 100%;
-  height: 60px; }
+  height: 60px;
+  margin: 0 0 100vh 0; }
   nav div {
     display: flex; }
     nav div .title {
@@ -47,10 +46,22 @@ nav {
     .is-3 {
       width: 100%; } }
 
+.greybox, .projects {
+  background: lightgrey;
+  display: flex;
+  padding: 3% 1%;
+  flex-wrap: wrap;
+  margin: auto 5%;
+  border-radius: 5px;
+  justify-content: space-around; }
+  .greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
+    text-align: center; }
+
 .about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background: red; }
   @media (max-width: 1000px) {
     .about {
       justify-content: center;
@@ -76,16 +87,15 @@ nav {
         .about .profile-image img {
           width: 45%; } }
 
-.greybox, .projects {
-  background: lightgrey;
+.skills {
   display: flex;
-  padding: 3% 1%;
   flex-wrap: wrap;
-  margin: auto 5%;
-  border-radius: 5px;
-  justify-content: space-around; }
-  .greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
-    text-align: center; }
+  background: green; }
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  background: blue; }
 
 .projects {
   margin: 0 5% 3% 5%; }
@@ -117,6 +127,6 @@ nav {
 .contact {
   padding: 1%; }
   .contact .is-12 {
-    margin: 0 0 3% 0; }
+    margin: 0 5% 3% 5%; }
 
 /*# sourceMappingURL=style.css.map */
