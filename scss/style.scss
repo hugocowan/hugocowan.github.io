@@ -29,7 +29,7 @@ nav{
     display: flex;
     .title{
       text-align: center;
-      margin: 0 10%;
+      margin: 1% 10%;
     }
   }
 }
@@ -63,7 +63,8 @@ nav{
   border-radius: 5px;
   justify-content: space-around;
   p, h3, h2{
-    text-align: center;
+    text-align: justify;
+    margin: 16px 10px;
   }
 }
 

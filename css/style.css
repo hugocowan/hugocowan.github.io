@@ -31,7 +31,7 @@ nav div {
 }
 nav div .title {
   text-align: center;
-  margin: 0 10%;
+  margin: 1% 10%;
 }
 
 .is-12 {
@@ -71,7 +71,8 @@ nav div .title {
   justify-content: space-around;
 }
 .greybox p, .projects p, .greybox h3, .projects h3, .greybox h2, .projects h2 {
-  text-align: center;
+  text-align: justify;
+  margin: 16px 10px;
 }
 
 .about {
