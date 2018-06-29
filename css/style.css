@@ -180,7 +180,11 @@ nav div a .far, nav div a .fab {
 }
 
 .contact {
-  padding: 1%;
+  display: flex;
+  width: 100%;
+}
+.contact .greybox, .contact .projects {
+  padding: 2% 0;
 }
 .contact .is-12 {
   margin: 0 5% 3% 5%;
