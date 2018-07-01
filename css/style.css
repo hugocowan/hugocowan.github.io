@@ -45,7 +45,6 @@ nav {
       padding: 0 3%;
       flex-wrap: wrap; }
       nav .nav-content .title {
-        font-size: 18px;
         width: 92%; }
       nav .nav-content .icon {
         display: block;
@@ -76,6 +75,16 @@ nav {
         nav .nav-content.responsive .links a {
           display: inline-block;
           margin: 0 0 10px 0; } }
+  @media (max-width: 420px) {
+    nav {
+      height: 55px; }
+      nav .title {
+        font-size: 21px; } }
+  @media (max-width: 365px) {
+    nav {
+      height: 50px; }
+      nav .title {
+        font-size: 18px; } }
 
 .is-12 {
   width: 100%; }

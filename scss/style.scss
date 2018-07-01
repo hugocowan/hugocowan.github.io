@@ -54,7 +54,7 @@ nav{
       padding: 0 3%;
       flex-wrap: wrap;
       .title{
-        font-size: 18px;
+        // font-size: 24px;
         width: 92%;
       }
       .icon{
@@ -98,6 +98,18 @@ nav{
           margin: 0 0 10px 0;
         }
       }
+    }
+  }
+  @media(max-width: 420px){
+    height: 55px;
+    .title{
+      font-size: 21px;
+    }
+  }
+  @media(max-width: 365px){
+    height: 50px;
+    .title{
+      font-size: 18px;
     }
   }
 }
