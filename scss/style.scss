@@ -8,10 +8,6 @@ body {
   margin: 0;
 }
 
-h2{
-  padding: 0 10px;
-}
-
 main{
   margin: 10% 0 5% 0;
   position: absolute;
@@ -25,35 +21,86 @@ a{
 }
 
 nav{
-  background: darkgrey;
+  background: #aec6cf;
   width: 100%;
   height: 60px;
   margin: 0 0 100vh 0;
-  div{
+  position: fixed;
+  z-index: 1;
+  .nav-content{
     display: flex;
-    margin: 0 10%;
-    .title{
-      text-align: left;
+    margin: 0 5%;
+    justify-content: space-between;
+    .icon{
+      display: none;
     }
-    a{
+    .title{
+      white-space: nowrap;
+    }
+    .links{
       align-self: center;
-      padding: 0 10px;
-      .far,.fab{
-        font-size: 30px;
+      display: flex;
+      a{
+        padding: 0 10px;
+        .far,.fab{
+          font-size: 30px;
+        }
       }
     }
-    @media(max-width: 630px){
+  }
+  @media(max-width: 620px){
+    .nav-content{
+      margin: 0;
+      padding: 0 3%;
+      flex-wrap: wrap;
       .title{
         font-size: 18px;
-        text-align: center;
+        width: 92%;
       }
-      a{
-        display: none;
+      .icon{
+        display: block;
+        align-self: center;
+        width: 8%;
+        .bar1, .bar2, .bar3 {
+            width: 23px;
+            height: 4px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+        &.change{
+          .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+            transform: rotate(-45deg) translate(-7px, 6px);
+          }
+          .bar2 {
+            opacity: 0;
+          }
+          .bar3 {
+              -webkit-transform: rotate(45deg) translate(-6px, -6px);
+              transform: rotate(45deg) translate(-6px, -6px);
+          }
+        }
+      }
+      .links{
+        width: 100%;
+        a{
+          display: none;
+        }
+      }
+    }
+    .nav-content.responsive{
+      background: #aec6cf;
+      .links{
+        justify-content: flex-end;
+        a{
+          display: inline-block;
+          margin: 0 0 10px 0;
+        }
       }
     }
   }
 }
-
 .is-12{
   width: 100%;
 }
@@ -86,31 +133,22 @@ nav{
 .greybox{
   background: lightgrey;
   display: flex;
-  padding: 3% 1%;
+  padding: 1% 1% 3% 1%;
   flex-wrap: wrap;
-  margin: auto 5%;
+  margin: 5% 5%;
   border-radius: 5px;
   justify-content: space-around;
   p, h3, h2{
     text-align: justify;
     margin: 16px 10px;
+    width: 100%;
   }
 }
 
 .about{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  @media(max-width: 1000px){
-    justify-content: center;
-    align-items: center;
-  }
-  @media(max-width: 768px){
-    margin: 5% 0 0 0;
-  }
-  @media(max-width: 375px){
-    margin: 15% 0 0 0;
-  }
+  justify-content: space-around;
   // margin: 1%;
   .profile-image {
     display: flex;
@@ -129,56 +167,77 @@ nav{
       }
     }
   }
+  .greybox{
+    margin: 10% 5%;
+    position: relative;
+    right: 4%;
+  }
+  @media(max-width: 1000px){
+    justify-content: center;
+    align-items: center;
+    .greybox{
+      right: 0%;
+    }
+  }
+  @media(max-width: 768px){
+    margin: 5% 0 0 0;
+  }
+  @media(max-width: 375px){
+    margin: 15% 0 0 0;
+  }
 }
 
 .skills{
   display: flex;
   flex-wrap: wrap;
   h3,p{
-    text-align: center;
+    text-align: left;
+    width: 80%;
   }
-  // background: pink;
 }
 
 .experience{
   @extend .skills;
-  // background: blue;
+  h3,p{
+    width: 100%;
+  }
 }
 
 .projects{
   @extend .greybox;
   // background: none;
   margin: 0 5% 3% 5%;
-  h3{
-    display: inline-flex;
-  }
-  .is-6{
+  .project{
     margin: 0 0 3% 0;
-  }
-  .project-image{
-    width: 90%;
-    border-radius: 5px;
-  }
-  .image-block{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0;
-    h3{
-      position: absolute;
-      top: 0;
-      color: white;
-    }
-    div{
-      position: absolute;
-      color: white;
-      background: rgba(0,0,0, 0.7);
+    p{
       width: 90%;
-      bottom: 0;
-      border-radius: 0 0 5px 5px;
+      margin: 16px auto;
     }
+    .project-image{
+      width: 90%;
+      border-radius: 5px;
+    }
+    .image-block{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      margin: 2% 0;
+      h3{
+        position: absolute;
+        top: 0;
+        color: white;
+      }
+      div{
+        position: absolute;
+        color: white;
+        background: rgba(0,0,0, 0.7);
+        width: 90%;
+        bottom: 0;
+        border-radius: 0 0 5px 5px;
+      }
 
+    }
   }
 }
 
@@ -187,6 +246,9 @@ nav{
   width: 100%;
   .greybox{
     padding: 2% 0;
+    h2{
+      width: 91%;
+    }
   }
   .is-12{
     margin: 0 5% 3% 5%;
