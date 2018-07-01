@@ -8,6 +8,6 @@ function toggleLinks(burger){ // eslint-disable-line no-unused-vars
     content.className = 'nav-content';
     nav.className = '';
   }
-  console.log(burger);
+  // console.log(burger);
   burger.classList.toggle('change');
 }
