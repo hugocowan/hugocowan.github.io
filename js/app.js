@@ -27,7 +27,7 @@ function wrapper() {
       console.log('old position > new one.');
       // oldPosition = newPosition;
       navbar.style.cssText =
-      'position: fixed; color: red';
+      'position: fixed; color: black';
     }
 
   });
