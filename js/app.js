@@ -20,11 +20,14 @@ function wrapper() {
     if (newPosition <= 0) {
       console.log('new position <= old one.');
       // oldPosition = newPosition;
-      navbar.style.position = 'absolute';
+      navbar.style.cssText =
+      'position: absolute; color: black';
+
     } else {
       console.log('old position > new one.');
       // oldPosition = newPosition;
-      navbar.style.position = 'fixed';
+      navbar.style.cssText =
+      'position: fixed; color: red';
     }
 
   });
